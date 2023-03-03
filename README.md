@@ -1,5 +1,5 @@
 # top-interview-questions
-A space for solving and recording Top Interview Questions in LeetCode.
+A repository for solving and recording Top Interview Questions in LeetCode.
 
 ### Upload
 
