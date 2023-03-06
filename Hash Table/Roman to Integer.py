@@ -19,7 +19,7 @@ class Solution:
                 i += 1   # index는 한 칸 건너 뜀
         return answer   # answer 반환
 
-### 모범 답안 ###
+### 모범 답안 1###
 https://leetcode.com/problems/roman-to-integer/solutions/264743/clean-python-beats-99-78/?orderBy=most_votes
 
 class Solution:
@@ -42,3 +42,17 @@ class Solution:
         for char in s:
             number += translations[char]
         return number
+
+### 모범 답안 2 ### 
+https://leetcode.com/problems/roman-to-integer/solutions/450264/python-beginner-98-fast-100-memo/?orderBy=most_votes
+    
+def romanToInt(self, s: str) -> int:
+	res, prev = 0, 0
+	dict = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+	for i in s[::-1]:          # rev the s
+		if dict[i] >= prev:
+			res += dict[i]     # sum the value iff previous value same or more
+		else:
+			res -= dict[i]     # substract when value is like "IV" --> 5-1, "IX" --> 10 -1 etc 
+		prev = dict[i]
+	return res
