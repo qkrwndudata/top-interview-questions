@@ -11,3 +11,7 @@
   3. 이러한 규칙이 40(XL), 90(XC), 400(CD), 900(CM)에도 적용됨
   
 - 힌트: Problem is simpler to solve by working the string from back to front and using a map.
+
+  1. input으로 주어지는 로마 숫자는 '주의할 점'을 제외하고는 뒤로 갈수록 더 작음
+  2. 주어진 문자열을 뒤에서부터 읽어 대응되는 숫자를 더해주되, 만약 연이어 나온 문자열이 더 작은 정수에 대응된다면 빼줌
+  3. map을 사용하라는 의미는 dictionary를 생각!
