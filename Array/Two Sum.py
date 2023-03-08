@@ -18,3 +18,6 @@ class Solution:
             if temp in nums[i+1:]:
                 return [i, nums[i+1:].index(temp) + (i+1)]
                     
+                
+                
+## 해시 테이블 사용
