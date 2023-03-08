@@ -15,3 +15,6 @@ class Solution:
                 if j[i] != v:
                     return strs[0][:i]
         return strs[0]
+    
+    
+# zip을 배워 감
