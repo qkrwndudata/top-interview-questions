@@ -1,4 +1,4 @@
-링크: https://leetcode.com/problems/two-sum/
+# 링크: https://leetcode.com/problems/two-sum/ -> nums와 target이 주어졌을때, 합쳐서 target이 되는 원소의 index 반환
 
 ### 내 풀이 ###
 class Solution:
@@ -20,4 +20,13 @@ class Solution:
                     
                 
                 
-## 해시 테이블 사용
+## 모범 답안: 해시 테이블 사용
+class Solution:
+    def twoSum(self, nums, target):
+        nums_map = {}   # 빈 dictionary 생성
+        for i, num in enumerate(nums):
+            nums_map[num] = i   # key에 value를, value에 index를 넣어줌
+            
+        for i, num in enumerate(nums):
+            if target - num in nums_map and i != nums_map[target-num]:   # i != nums_map[target-num]: target을 만드는 nums가 동일할 경우 대비
+                return [i, nums_map[target-num]]
