@@ -31,3 +31,5 @@ class Solution:
             if list2 is None:
                 answer.next = list1
         return dummy.next
+    
+    # 유경 알고리즘 직접 작성해보고 코드로 구현하기
