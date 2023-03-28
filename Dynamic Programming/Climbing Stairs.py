@@ -26,4 +26,4 @@ def climb(n):
     print(dp)
     return dp[n]
 		
-# 알고리즘 설명: 다이나믹 프로그래밍 (참고: https://hongjw1938.tistory.com/47)
+# 알고리즘 설명: [다이나믹 프로그래밍](참고: https://hongjw1938.tistory.com/47)
